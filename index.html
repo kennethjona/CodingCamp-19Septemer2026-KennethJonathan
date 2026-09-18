@@ -73,7 +73,7 @@
             <select id="category"></select>
           </div>
         </div>
-        <!-- Custom category input -->
+        <!-- Custom category input (shown when "+ Add custom" is selected) -->
         <div class="form-group" id="customCategoryWrap" style="display:none;">
           <label for="customCategory">New Category Name</label>
           <input type="text" id="customCategory" placeholder="Enter category name" />
@@ -121,11 +121,12 @@
         </ul>
       </section>
 
-      <!-- CHART -->
+      <!-- PIE CHART -->
       <section class="card chart-card">
         <h2>Spending by Category</h2>
         <div class="chart-wrap">
-          <canvas id="spendingChart" width="260" height="260" aria-label="Pie chart of spending by category" role="img"></canvas>
+          <canvas id="spendingChart" width="260" height="260"
+            aria-label="Pie chart of spending by category" role="img"></canvas>
         </div>
         <div class="chart-legend" id="chartLegend"></div>
         <p class="empty-chart" id="emptyChart">No expense data to display.</p>
