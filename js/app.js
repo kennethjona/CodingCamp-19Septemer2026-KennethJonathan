@@ -572,11 +572,11 @@ function bindEvents() {
 
 /* ─── UTILITIES ──────────────────────────────────────────────── */
 function formatCurrency(amount) {
-  return new Intl.NumberFormat('en-US', { style: 'currency', currency: 'Rp' }).format(amount);
+  return new Intl.NumberFormat('id-ID', { style: 'currency', currency: 'Rp' }).format(amount);
 }
 
 function formatDate(isoString) {
-  return new Intl.DateTimeFormat('en-US', {
+  return new Intl.DateTimeFormat('id-ID', {
     month: 'short', day: 'numeric', year: 'numeric',
     hour: 'numeric', minute: '2-digit',
   }).format(new Date(isoString));
